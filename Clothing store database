@@ -1,0 +1,24 @@
+creating a fictional store
+
+CREATE TABLE c_store (id INTEGER PRIMARY KEY, item TEXT, price INTEGER, size TEXT, color TEXT);
+INSERT INTO c_store VALUES (1, "shirt", 20, "M", "blue");
+INSERT INTO c_store VALUES (2, "pants", 30, "L", "green");
+INSERT INTO c_store VALUES (3, "shorts", 25, "S", "white");
+INSERT INTO c_store VALUES (4, "jacket", 29, "M", "red");
+INSERT INTO c_store VALUES (5, "t-shirt", 15, "S", "yellow");
+INSERT INTO c_store VALUES (6, "hat", 10, "S", "orange");
+INSERT INTO c_store VALUES (7, "cardigan", 27, "M", "pink");
+INSERT INTO c_store VALUES (8, "hoodie", 31, "L", "teal");
+INSERT INTO c_store VALUES (9, "sweatpants", 33, "S", "brown");
+INSERT INTO c_store VALUES (10, "socks", 12,"S", "white");
+INSERT INTO c_store VALUES (11, "long shirt", 23, "L","purple");
+INSERT INTO c_store VALUES (12, "workout", 37, "M","fuscia");
+INSERT INTO c_store VALUES (13, "leggings", 29, "S", "black");
+INSERT INTO c_store VALUES (14, "jeans", 34, "L", "denim");
+INSERT INTO c_store VALUES (15, "gloves", 14, "M", "grey");
+
+display all items and order them by their price
+SELECT * FROM c_store ORDER BY price;
+
+the complete sum of all the items in the store
+SELECT SUM (price) FROM c_store;
